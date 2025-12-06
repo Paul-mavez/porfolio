@@ -265,7 +265,7 @@ section {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 180px;
+    
 }
 
 .hero-background {
@@ -352,7 +352,7 @@ section {
     align-items: center;
     position: relative;
     z-index: 2;
-    padding-top: 180px;
+   
 }
 
 .hero-text {
