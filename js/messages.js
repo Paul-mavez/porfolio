@@ -11,7 +11,7 @@ async function fetchMessages() {
         // Automatically switch between local and live API
         const API_URL = window.location.hostname === "localhost" 
             ? "http://localhost:3000/messages"  // Local development
-            : "https://YOUR-RENDER-APP.onrender.com/messages"; // Replace with your Render URL
+            : "https://porfolio-8uaz.onrender.com/messages"; // Replace with your Render URL
 
         const response = await fetch(API_URL);
 
