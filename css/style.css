@@ -374,29 +374,6 @@ section {
     border: 1px solid rgba(107, 46, 255, 0.3);
 }
 
-/* .auto-type {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    font-family: var(--font-main);
-    min-height: 200px;
-    position: relative;
-}
-
-.cursor {
-    color: var(--accent-color);
-    animation: blink 1s infinite;
-    font-weight: 300;
-} 
-
-
-
- @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-} */
-
 .auto-type {
     font-size: 4rem;
     font-weight: 800;
@@ -417,10 +394,6 @@ section {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
-
-
-
-
 
 .hero-subtitle {
     font-size: 1.2rem;
@@ -1651,15 +1624,26 @@ section {
 }
 
 @media (max-width: 992px) {
+    /* MOBILE: Name first, then picture */
     .hero-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        gap: 80px;
+        gap: 60px;
+    }
+    
+    .hero-text {
+        order: 1; /* Text first */
+    }
+    
+    .hero-visual {
+        order: 2; /* Picture second */
     }
     
     .auto-type {
         font-size: 3rem;
-        min-height: 160px;
+        min-height: auto;
+        margin-bottom: 20px;
     }
     
     .hero-buttons {
@@ -1757,17 +1741,32 @@ section {
     
     .auto-type {
         font-size: 2.5rem;
-        min-height: 140px;
+        min-height: auto;
     }
     
+    /* Stack buttons vertically on mobile */
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     
     .btn {
         width: 100%;
         max-width: 300px;
+        justify-content: center;
+    }
+    
+    /* Stack experience stats vertically */
+    .experience-stats {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    
+    .stat {
+        text-align: center;
     }
     
     .skills-grid {
@@ -1793,8 +1792,10 @@ section {
         text-align: center;
     }
     
+    /* Adjust image size for smaller screens */
     .image-3d-container {
         height: 400px;
+        margin: 0 auto;
     }
     
     .main-image-3d {
@@ -1828,8 +1829,8 @@ section {
     }
     
     .auto-type {
-        font-size: 2rem;
-        min-height: 120px;
+        font-size: 2.2rem;
+        min-height: auto;
     }
     
     .hero-subtitle {
@@ -1840,6 +1841,7 @@ section {
         grid-template-columns: 1fr;
     }
     
+    /* Adjust image for very small screens */
     .image-3d-container {
         height: 350px;
     }
@@ -1863,9 +1865,10 @@ section {
         width: 45px;
         height: 45px;
     }
-
-
     
+    .orbit-icon-3d i {
+        font-size: 1.3rem;
+    }
 }
 
 /* Add these to your styles.css file */
@@ -2010,8 +2013,6 @@ section {
     transform: translateY(0);
 }
 
-
-
 .notification.error {
     border-left: 5px solid #f44336;
 }
@@ -2031,8 +2032,6 @@ section {
     color: white;
     cursor: pointer;
 }
-
-
 
 .title {
     text-align: center;
@@ -2070,135 +2069,6 @@ th {
 
 tr:hover {
     background: rgba(255,255,255,0.1);
-}
-/* Add these styles to your existing CSS */
-
-@media (max-width: 768px) {
-    /* Reorder hero section for mobile */
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .hero-text {
-        order: 1;
-        animation: fadeInUp 1s ease 0.2s both;
-    }
-    
-    .hero-visual {
-        order: 2;
-        animation: fadeInUp 1s ease 0.4s both;
-    }
-    
-    /* Adjust the auto-type text for mobile */
-    .auto-type {
-        font-size: 2.5rem;
-        min-height: auto;
-        margin-bottom: 20px;
-    }
-    
-    /* Reduce 3D container size for mobile */
-    .image-3d-container {
-        height: 350px;
-        margin: 0 auto;
-    }
-    
-    .main-image-3d {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-wrapper {
-        width: 180px;
-        height: 180px;
-    }
-    
-    /* Adjust orbit icons for mobile */
-    .orbit-icon-3d {
-        width: 45px;
-        height: 45px;
-        transform: 
-            translate(-50%, -50%)
-            rotateY(calc(var(--i) * 51.4deg))
-            translateZ(150px)
-            rotateY(calc(var(--i) * -51.4deg));
-    }
-    
-    .orbit-icon-3d i {
-        font-size: 1.3rem;
-    }
-    
-    /* Adjust hero subtitle for mobile */
-    .hero-subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 30px;
-    }
-    
-    /* Stack buttons vertically on mobile */
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-    
-    /* Adjust experience stats for mobile */
-    .experience-stats {
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 30px;
-        padding-top: 30px;
-    }
-    
-    .stat {
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Further adjustments for smaller phones */
-    .auto-type {
-        font-size: 2.2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .image-3d-container {
-        height: 300px;
-    }
-    
-    .main-image-3d {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .image-wrapper {
-        width: 160px;
-        height: 160px;
-    }
-    
-    /* Adjust orbit for very small screens */
-    .orbit-icon-3d {
-        width: 40px;
-        height: 40px;
-        transform: 
-            translate(-50%, -50%)
-            rotateY(calc(var(--i) * 51.4deg))
-            translateZ(120px)
-            rotateY(calc(var(--i) * -51.4deg));
-    }
-    
-    .orbit-icon-3d i {
-        font-size: 1.1rem;
-    }
 }
 
 /* Optional: Add smooth animation for mobile layout change */
