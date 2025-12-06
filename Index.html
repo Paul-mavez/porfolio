@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Chavez | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loading-spinner">
+                <div class="spinner-circle violet-glow"></div>
+                <div class="spinner-circle violet-glow"></div>
+                <div class="spinner-circle violet-glow"></div>
+            </div>
+            <div class="loading-text">My Portfolio...</div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo">PM<span class="logo-dot">.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="tech-grid"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="tagline">
+                        <span class="tagline-text">Full-Stack Developer</span>
+                    </div>
+                  <h1 class="auto-type">
+                    <span id="line1"></span><span class="cursor">|</span>
+                </h1>
+
+
+                    <p class="hero-subtitle">Building cutting-edge digital solutions with modern web technologies and .NET frameworks. Passionate about creating seamless user experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Connect</span>
+                            <i class="fas fa-comment-alt"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="experience-stats">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Exp</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="image-3d-container">
+                        <!-- Main Image with 3D effect -->
+                        <div class="main-image-3d">
+                            <div class="image-wrapper">
+                                <img src="images/p.png" alt="Paul Chavez" class="profile-img">
+                                <div class="image-frame"></div>
+                            </div>
+                            
+                            <!-- 3D Rotating Icons - No Text -->
+                            <div class="orbit-3d">
+                                <div class="orbit-ring"></div>
+                                <div class="orbit-ring orbit-ring-2"></div>
+                                
+                                <div class="orbit-icon-3d" style="--i:0;">
+                                    <div class="icon-wrapper">
+                                        <i class="fab fa-html5"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:1;">
+                                    <div class="icon-wrapper">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:2;">
+                                    <div class="icon-wrapper">
+                                        <i class="fab fa-js"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:3;">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-code"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:4;">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-window-maximize"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:5;">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-server"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="orbit-icon-3d" style="--i:6;">
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="image-glow-effect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+         
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Crafting Digital <span>Experiences</span></h2>
+                <p class="section-subtitle">Passionate developer with expertise in full-stack technologies</p>
+            </div>
+            
+            <!-- <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="images/p.png" alt="Paul Chavez Working">
+                        <div class="about-img-frame"></div>
+                        <div class="about-img-glow"></div>
+                    </div>
+                </div> -->
+                
+                <div class="about-text">
+                    <div class="about-intro glassy-card">
+                        <h3>Full-Stack Developer & Problem Solver</h3>
+                        <p>I'm Paul Chavez, a passionate Full-Stack Developer with over 5 years of experience building modern web applications and desktop solutions. I specialize in creating seamless digital experiences that combine innovative design with robust functionality.</p>
+                        <p>My expertise spans across the entire development stack, from crafting responsive front-end interfaces with HTML, CSS, and JavaScript to building scalable back-end systems with C# and ASP.NET. I thrive on turning complex challenges into elegant, user-friendly solutions.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div>
+                                    <h4>Innovative Solutions</h4>
+                                    <p>Building cutting-edge applications with modern technologies</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div>
+                                    <h4>Full-Stack Expertise</h4>
+                                    <p>End-to-end development from concept to deployment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cards">
+                        <div class="about-card glassy-card">
+                            <div class="card-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Professional Experience</h4>
+                            <p>5+ years developing enterprise applications for various industries including finance, healthcare, and e-commerce.</p>
+                        </div>
+                        
+                        <div class="about-card glassy-card">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Continuous Learning</h4>
+                            <p>Constantly updating skills with latest technologies and frameworks to deliver modern solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">My Expertise</div>
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <p class="section-subtitle">Mastering the tools and technologies that power modern applications</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>HTML5</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>CSS3</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>C# & .NET</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>SQL Server</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item glassy-card">
+                        <div class="skill-icon-3d">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>ASP.NET Core</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-summary glassy-card">
+                    <h3>Development Approach</h3>
+                    <p>I follow a comprehensive development process that ensures every project meets the highest standards of quality, performance, and user experience.</p>
+                    
+                    <div class="approach-list">
+                        <div class="approach-item">
+                            <div class="approach-number">01</div>
+                            <div class="approach-content">
+                                <h4>Planning & Analysis</h4>
+                                <p>Understanding requirements and planning the architecture</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">02</div>
+                            <div class="approach-content">
+                                <h4>Design & Prototyping</h4>
+                                <p>Creating wireframes and interactive prototypes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">03</div>
+                            <div class="approach-content">
+                                <h4>Development & Testing</h4>
+                                <p>Building with clean code and rigorous testing</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">04</div>
+                            <div class="approach-content">
+                                <h4>Deployment & Maintenance</h4>
+                                <p>Launching and providing ongoing support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+               
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+               
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glassy-card">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-view">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span>ASP.NET</span>
+                            <span>React</span>
+                            <span>SQL Server</span>
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A online shopping platform with user authentication, payment processing, and admin dashboard.</p>
+                        <a href="#" class="project-link">
+                            <span>View Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card glassy-card">
+                    <div class="project-badge">Desktop App</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-view">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>WinForms</span>
+                            <span>MySQL</span>
+                        </div>
+                        <h3>Enterprise Task Manager</h3>
+                        <p>A desktop application for project management with team collaboration features and real-time updates.</p>
+                        <a href="#" class="project-link">
+                            <span>View Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card glassy-card">
+                    <div class="project-badge">Web App</div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-view">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>Interactive Dashboard</h3>
+                        <p>A responsive admin dashboard with data visualization, and real-time analytics.</p>
+                        <a href="#" class="project-link">
+                            <span>View Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#" class="btn btn-outline">
+                    <span style="color: white;">View All Projects</span>
+                    <i class="fas fa-arrow-right" style="color: white;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Get In Touch</div>
+            <h2 class="section-title">Let's Build <span>Together</span></h2>
+            <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring your ideas to life</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card glassy-card">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:paul.chavez@example.com" autocomplete="email">paul.chavez@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+15551234567" autocomplete="tel">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Paul-mavez" target=_blank class="social-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form glassy-card" >
+                <h3>Send a Message</h3>
+                <form id="contactForm" autocomplete="on">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Enter your name" 
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                autocomplete="email"
+                                placeholder="Enter your email" 
+                                required>
+                        </div>
+                    </div>
+                    
+                 
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            autocomplete="off"
+                            rows="5" 
+                            placeholder="Tell me about your project..." 
+                            required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" >
+                        <span style="cursor: pointer;">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Paul<span>Mavez</span></a>
+                    <p>Full-Stack Developer creating digital experiences that matter</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>C# & .NET</li>
+                            <li>ASP.NET Core</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://github.com/Paul-mavez" target="_blank"><i class="fab fa-github"></i></a>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Paul Mavez. All Rights Reserved.</p>
+                <p>Designed & Developed with <i class="fas fa-heart" style="color: white;"></i> by Paul Mavez</p>
+            </div>
+        </div>
+    </footer>
+
+ 
+
+    <script src="main.js"></script>
+
+</body>
+</html>
