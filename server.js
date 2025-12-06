@@ -1,17 +1,28 @@
 import express from "express";
 import mysql from "mysql2";
 import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Serve static files
+app.use(express.static(path.join(__dirname, "Pages")));
+app.use("/css", express.static(path.join(__dirname, "css")));
+app.use("/js", express.static(path.join(__dirname, "js")));
+app.use("/images", express.static(path.join(__dirname, "images")));
+
 // MySQL connection
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "paul12345",
-    database: "portfolio"
+    host: process.env.DB_HOST || "localhost",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASS || "paul12345",
+    database: process.env.DB_NAME || "portfolio"
 });
 
 db.connect(err => {
@@ -37,4 +48,10 @@ app.get("/messages", (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log("Server running at http://localhost:3000"));
+// Fallback for frontend routing
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "Pages", "index.html"));
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
