@@ -1,4 +1,3 @@
-// messages.js
 document.addEventListener("DOMContentLoaded", () => {
     fetchMessages();
 });
@@ -8,16 +7,12 @@ async function fetchMessages() {
     tbody.innerHTML = `<tr><td colspan="5">Loading messages...</td></tr>`;
 
     try {
-        // Automatically switch between local and live API
-        const API_URL = window.location.hostname === "localhost" 
-            ? "http://localhost:3000/messages"  // Local development
-            : "https://porfolio-8uaz.onrender.com/messages"; // Replace with your Render URL
+        const API_URL = window.location.hostname === "localhost"
+            ? "http://localhost:3000/messages"
+            : "https://porfolio-8uaz.onrender.com/messages"; // Your Render URL
 
         const response = await fetch(API_URL);
-
-        if (!response.ok) {
-            throw new Error(`Network response was not ok (${response.status})`);
-        }
+        if (!response.ok) throw new Error(`Network response was not ok (${response.status})`);
 
         const messages = await response.json();
         loadTable(messages);
@@ -29,7 +24,7 @@ async function fetchMessages() {
 
 function loadTable(messages) {
     const tbody = document.querySelector("#messagesTable tbody");
-    tbody.innerHTML = ""; 
+    tbody.innerHTML = "";
 
     if (!messages || messages.length === 0) {
         tbody.innerHTML = `<tr><td colspan="5">No messages found.</td></tr>`;
@@ -48,4 +43,3 @@ function loadTable(messages) {
         tbody.appendChild(row);
     });
 }
-
