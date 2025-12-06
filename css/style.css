@@ -374,6 +374,29 @@ section {
     border: 1px solid rgba(107, 46, 255, 0.3);
 }
 
+/* .auto-type {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: var(--font-main);
+    min-height: 200px;
+    position: relative;
+}
+
+.cursor {
+    color: var(--accent-color);
+    animation: blink 1s infinite;
+    font-weight: 300;
+} 
+
+
+
+ @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+} */
+
 .auto-type {
     font-size: 4rem;
     font-weight: 800;
@@ -394,6 +417,10 @@ section {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+
+
+
 
 .hero-subtitle {
     font-size: 1.2rem;
@@ -1624,26 +1651,15 @@ section {
 }
 
 @media (max-width: 992px) {
-    /* MOBILE: Name first, then picture */
     .hero-content {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
-        gap: 60px;
-    }
-    
-    .hero-text {
-        order: 1; /* Text first */
-    }
-    
-    .hero-visual {
-        order: 2; /* Picture second */
+        gap: 80px;
     }
     
     .auto-type {
         font-size: 3rem;
-        min-height: auto;
-        margin-bottom: 20px;
+        min-height: 160px;
     }
     
     .hero-buttons {
@@ -1741,32 +1757,17 @@ section {
     
     .auto-type {
         font-size: 2.5rem;
-        min-height: auto;
+        min-height: 140px;
     }
     
-    /* Stack buttons vertically on mobile */
     .hero-buttons {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
     }
     
     .btn {
         width: 100%;
         max-width: 300px;
-        justify-content: center;
-    }
-    
-    /* Stack experience stats vertically */
-    .experience-stats {
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 30px;
-        padding-top: 30px;
-    }
-    
-    .stat {
-        text-align: center;
     }
     
     .skills-grid {
@@ -1792,10 +1793,8 @@ section {
         text-align: center;
     }
     
-    /* Adjust image size for smaller screens */
     .image-3d-container {
         height: 400px;
-        margin: 0 auto;
     }
     
     .main-image-3d {
@@ -1829,8 +1828,8 @@ section {
     }
     
     .auto-type {
-        font-size: 2.2rem;
-        min-height: auto;
+        font-size: 2rem;
+        min-height: 120px;
     }
     
     .hero-subtitle {
@@ -1841,7 +1840,6 @@ section {
         grid-template-columns: 1fr;
     }
     
-    /* Adjust image for very small screens */
     .image-3d-container {
         height: 350px;
     }
@@ -1865,10 +1863,9 @@ section {
         width: 45px;
         height: 45px;
     }
+
+
     
-    .orbit-icon-3d i {
-        font-size: 1.3rem;
-    }
 }
 
 /* Add these to your styles.css file */
@@ -2013,6 +2010,8 @@ section {
     transform: translateY(0);
 }
 
+
+
 .notification.error {
     border-left: 5px solid #f44336;
 }
@@ -2032,6 +2031,8 @@ section {
     color: white;
     cursor: pointer;
 }
+
+
 
 .title {
     text-align: center;
@@ -2069,9 +2070,4 @@ th {
 
 tr:hover {
     background: rgba(255,255,255,0.1);
-}
-
-/* Optional: Add smooth animation for mobile layout change */
-.hero-content {
-    transition: all 0.3s ease;
 }
