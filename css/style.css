@@ -2071,3 +2071,80 @@ th {
 tr:hover {
     background: rgba(255,255,255,0.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this to your CSS file */
+
+/* Mobile-first layout */
+@media (max-width: 992px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    /* On mobile: Name -> Picture -> Rest */
+    .hero-text {
+        order: 1; /* Name first */
+    }
+    
+    .hero-visual {
+        order: 2; /* Picture second */
+        margin: 20px auto;
+    }
+    
+    .hero-rest-content {
+        order: 3; /* Everything else third */
+    }
+    
+    .hero-subtitle {
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .experience-stats {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 993px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+    
+    .hero-rest-content {
+        grid-column: 1 / -1; /* Takes full width */
+        margin-top: 40px;
+    }
+}
