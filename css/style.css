@@ -265,7 +265,7 @@ section {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .hero-background {
@@ -352,7 +352,6 @@ section {
     align-items: center;
     position: relative;
     z-index: 2;
-    
 }
 
 .hero-text {
@@ -1191,7 +1190,6 @@ section {
     height: 220px;
     overflow: hidden;
     position: relative;
-    
 }
 
 .project-image img {
@@ -2075,7 +2073,23 @@ tr:hover {
 }
 
 
-    /* Add this to your CSS file */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this to your CSS file */
 
 /* Mobile-first layout */
 @media (max-width: 992px) {
@@ -2098,7 +2112,6 @@ tr:hover {
     
     .hero-rest-content {
         order: 3; /* Everything else third */
-        
     }
     
     .hero-subtitle {
