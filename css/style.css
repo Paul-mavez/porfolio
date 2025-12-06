@@ -352,6 +352,7 @@ section {
     align-items: center;
     position: relative;
     z-index: 2;
+    padding-top: 180px;
 }
 
 .hero-text {
